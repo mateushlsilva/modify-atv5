@@ -23,7 +23,7 @@ dotenv.config();
 const AppDataSource = new DataSource({
     database: 'postgres', // se for SQLite, então use bdaula.sqlite
     type: "postgres", // se for SQLite, então use sqlite
-    url: process.env.URL, // não use esta propriedade se for sqlite
+    host: process.env.URL, // não use esta propriedade se for sqlite
     port: 5432, // não use esta propriedade se for sqlite
     username: 'postgres', // não use esta propriedade se for sqlite
     password: process.env.SENHA, // não use esta propriedade se for sqlite
